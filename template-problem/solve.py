@@ -31,7 +31,9 @@ def parse_input():
     
     '''
     problem = {}
-    nb_livres,nb_jours
+    nb_livres,nb_jours = map(int, input().split())
+    for nb_jours in range(1, nbJours + 1):
+    nbClients = int(input())
 
 def solve(problem):
     result = []
