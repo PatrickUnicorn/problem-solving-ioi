@@ -34,7 +34,8 @@ def parse_input():
     nb_livres,nb_jours = map(int, input().split())
     for _ in range(nb_jours):
         nb_clients = int(input())
-           for i_clients in range(nb_clients):
+        for i_clients in range(nb_clients):
+            
 
 def solve(problem):
     result = []
