@@ -15,40 +15,43 @@ try:
 except:
     pass
 ######################## Tests ###############################
-    
+
 from collections import namedtuple
 
 Problem = namedtuple('Problem', [])
 
-    
-
 
 def parse_input():
     '''
-    
+
     Parses the input data and returns a dictionary with everything
     well structured.
-    
+
     '''
-    problem = {}
-    nb_livres,nb_jours = map(int, input().split())
-    for _ in range(nb_jours):
-        nb_clients = int(input())
-        for i_clients in range(nb_clients):
-            
+
+
+nbLivres, nbJours = map(int, input().split())
+date_retour = [0] * nbLivres
+for iJour in range(1, nbJours + 1):
+    nbClients = int(input())
+    for _ in range(nbClients):
+        indice, duree = map(int, input().split())
+        if date_retour[indice] <= iJour:
+            print(1)
+            date_retour[indice] = iJour + duree
+        else:
+            print(0)
+
 
 def solve(problem):
     result = []
-    
+
     return result
-        
-    
-    
+
+
 def output(result):
     for r in result:
         print(r)
-    
-            
 
 
 if __name__ == '__main__':
