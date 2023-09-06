@@ -30,10 +30,11 @@ def parse_input():
     well structured.
     
     '''
-    return Problem()
+    problem = {}
+    nb_livres,nb_jours
 
 def solve(problem):
-    result = [1, 0, 1]
+    result = []
     
     return result
         
